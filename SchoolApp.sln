@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolApp", "SchoolApp\SchoolApp.csproj", "{E496DE8D-647A-46A1-8A61-BFB9AB7B3507}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NUTestSchApp", "NUTestSchApp\NUTestSchApp.csproj", "{EF3E703D-A750-4872-9791-382979E9975F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E496DE8D-647A-46A1-8A61-BFB9AB7B3507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E496DE8D-647A-46A1-8A61-BFB9AB7B3507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E496DE8D-647A-46A1-8A61-BFB9AB7B3507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E496DE8D-647A-46A1-8A61-BFB9AB7B3507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3E703D-A750-4872-9791-382979E9975F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3E703D-A750-4872-9791-382979E9975F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3E703D-A750-4872-9791-382979E9975F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3E703D-A750-4872-9791-382979E9975F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {481FCB31-F236-47F0-A6BE-D5DCAE5E8B40}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<ArrayOfTeacher xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Teacher>
+    <F>Попова</F>
+    <I>Ольга</I>
+    <O>Ивановна</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>150</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Чешкина</F>
+    <I>Ирина</I>
+    <O>Дмитриевна</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups>
+      <string>Mon12:00Wed12:00</string>
+    </AssignedGroups>
+  </Teacher>
+  <Teacher>
+    <F>Васильев</F>
+    <I>Василий</I>
+    <O>Олегович</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>250</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Петров</F>
+    <I>Олег</I>
+    <O>Иванович</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>90</HourlyRate>
+    <AddData />
+    <AssignedGroups>
+      <string>Tue14:00Sat14:00</string>
+      <string>Mon11:00Tue10:00</string>
+    </AssignedGroups>
+  </Teacher>
+  <Teacher>
+    <F>Лебедева</F>
+    <I>Ольга</I>
+    <O>Семеновна</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>640</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Антонова</F>
+    <I>Елена</I>
+    <O>Маратовна</O>
+    <Phone>98465465</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>390</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Авмвампчв</F>
+    <I>Исамичамчв</I>
+    <O>Сясяысы</O>
+    <Phone>52437430078</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>460</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Онегин</F>
+    <I>Илья</I>
+    <O>Борисович</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>280</HourlyRate>
+    <AddData />
+    <AssignedGroups>
+      <string>Thu12:00Tue14:00</string>
+    </AssignedGroups>
+  </Teacher>
+  <Teacher>
+    <F>Кулагин</F>
+    <I>Сильвестр</I>
+    <O>Дмитриевич</O>
+    <Phone />
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Сергеева</F>
+    <I>Светлана</I>
+    <O>Павловна</O>
+    <Phone>6565651</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Волкова</F>
+    <I>Марина</I>
+    <O>Анатольевна</O>
+    <Phone>68546351</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>560</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Таловикова</F>
+    <I>Светлана</I>
+    <O>Александровна</O>
+    <Phone>498465653</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Жиков</F>
+    <I>Иван</I>
+    <O>Анатольевич</O>
+    <Phone>16516</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+  <Teacher>
+    <F>Ывсысывывм</F>
+    <I>Вамвамвсс</I>
+    <O>Ывсыфы</O>
+    <Phone>4956516516</Phone>
+    <BDate />
+    <Edit>false</Edit>
+    <Delete>false</Delete>
+    <HourlyRate>0</HourlyRate>
+    <AddData />
+    <AssignedGroups />
+  </Teacher>
+</ArrayOfTeacher>

@@ -1,0 +1,114 @@
+﻿<Window x:Class="SchoolApp.Dialogs.AttendanceEditor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:nc="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:SchoolApp.Dialogs"
+        mc:Ignorable="d"
+        Title="Журнал посещаемости" Height="700" Width="1200" FontFamily="Roboto" Style="{StaticResource WindowStyle1}" ScrollViewer.CanContentScroll="True" ResizeMode="CanMinimize">
+    <!--
+    <Window.Resources>
+        <ObjectDataProvider x:Key="myProv" MethodName="someMethod" ObjectType="{x:Type nc:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="SchoolApp.Classes.ClassTimetable"></x:Type>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+    -->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="DarkSlateBlue" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+        <!--   <Rectangle Fill="Aquamarine" Grid.ColumnSpan="3" Height="7" VerticalAlignment="Top" Grid.Row="1"/> -->
+        <Rectangle Fill="Aquamarine"  Grid.Row="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin"/>
+
+       
+        <TabControl Margin="20,20,20,0" Grid.RowSpan="2" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin">
+            <TabItem Header="Учёт посещаемости">
+                <Grid  HorizontalAlignment="Right" Width="1190">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="183*"/>
+                        <ColumnDefinition Width="412*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"></RowDefinition>
+                        <RowDefinition/>
+                        <RowDefinition Height="12"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Vertical"  Background="DarkSlateBlue" Grid.ColumnSpan="2" Grid.RowSpan="3" Margin="46,0,0,0" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" >
+
+                        <Label Foreground="DarkSlateBlue"  Padding="30,10"  FontSize="12pt" FontWeight="DemiBold" Margin="0" BorderBrush="Fuchsia" BorderThickness="0,0,0,7" 
+                                       Background="Aquamarine" >
+                            Выбрать группу:</Label>
+
+                        <TreeView  x:Name="mainTreeView" Width="Auto"  Margin="0" Padding="15,15,0,0" Foreground="LightBlue" Grid.RowSpan="2" BorderThickness="0" Background="{x:Null}" />
+
+
+                    </StackPanel>
+                 
+                    <TabControl x:Name="tabControl" FontSize="11pt" Grid.Column="1" Grid.Row="1" Margin="10,50,44,127" BorderThickness="0" 
+                                        Background="Transparent" d:LayoutOverrides="TopMargin, BottomMargin">
+                        <TabItem Header="Сентябрь" x:Name="sep">
+                            <Grid  x:Name="sepGrid" Margin="0,0,17,0" />
+
+                        </TabItem>
+                        <TabItem Header="Октябрь" x:Name="oct">
+                            <Grid x:Name="octGrid"/>
+                        </TabItem>
+                        <TabItem Header="Ноябрь" x:Name="nov">
+                            <Grid x:Name="novGrid" />
+                        </TabItem>
+                        <TabItem Header="Декабрь" x:Name="dec">
+                            <Grid x:Name="decGrid"/>
+                        </TabItem>
+                        <TabItem Header="Январь" x:Name="jan">
+                            <Grid x:Name="janGrid"/>
+                        </TabItem>
+                        <TabItem Header="Февраль" x:Name="feb">
+                            <Grid x:Name="febGrid"/>
+                        </TabItem>
+                        <TabItem Header="Март" x:Name="mar">
+                            <Grid x:Name="marGrid"/>
+                        </TabItem>
+                        <TabItem Header="Апрель" x:Name="apr">
+                            <Grid x:Name="aprGrid"/>
+                        </TabItem>
+                        <TabItem Header="Май" x:Name="may">
+                            <Grid x:Name="mayGrid"/>
+                        </TabItem>
+                        <TabItem Header="Июнь" x:Name="jun">
+                            <Grid x:Name="junGrid"/>
+                        </TabItem>
+                        <TabItem Header="Июль" x:Name="jul">
+                            <Grid x:Name="julGrid"/>
+                        </TabItem>
+                        <TabItem Header="Август" x:Name="aug">
+                            <Grid x:Name="augGrid"/>
+                        </TabItem>
+                    </TabControl>
+
+                    <DockPanel Grid.Column="1" Grid.Row="1" Height="35" Margin="20,0,80,10" VerticalAlignment="Bottom" d:LayoutOverrides="LeftMargin, RightMargin, TopMargin, BottomMargin" >
+
+                        <Button Grid.Row="1" Grid.Column="2" Name="cancelBtn" Content="Очистить" Width="125" HorizontalAlignment="Left" 
+                                    Click="CancelBtn_Click" Visibility="Visible" FontWeight="Bold" Background="Aquamarine" Foreground="DarkSlateBlue" FontStyle="Italic" BorderBrush="DarkSlateBlue" BorderThickness="3" />
+                        <Button Grid.Row="1" Grid.Column="2" Name="saveBtn" Content="Сохранить" Width="125"  HorizontalAlignment="Right" 
+                                    Click="SaveBtn_Click" Visibility="Visible" FontWeight="Bold" Background="Aquamarine" Foreground="DarkSlateBlue" BorderBrush="#FFF53167" BorderThickness="3" />
+                    </DockPanel>
+                </Grid>
+
+            </TabItem>
+            <!--    </ScrollViewer>  -->
+            <TabItem Header="Свод" Name="genAtt" GotFocus="GenAtt_GotFocus" >
+                <StackPanel Orientation="Vertical" x:Name="mainStackpanel">
+                   <TabControl x:Name="tc"></TabControl> 
+                   
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,153 @@
+﻿<Application x:Class="SchoolApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SchoolApp"
+             StartupUri="MainWindow.xaml">
+    
+    <Application.Resources>
+        
+        <Style x:Key="WindowStyle1" TargetType="{x:Type Window}">
+            <Setter Property="FontFamily" Value="Book Antiqua" />
+            <Setter Property="FontSize" Value="12pt" />
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="Background">
+                <Setter.Value>
+                <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                    <DrawingBrush.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="White">
+                                <GeometryDrawing.Geometry>
+                                    <RectangleGeometry Rect="0,0,1,1" />
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                            <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                            <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                        </DrawingGroup>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+                <!--      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9AA1AC" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush> -->
+                </Setter.Value>
+            </Setter>
+
+
+        </Style>
+        <Style x:Key="WindowStyle2" TargetType="{x:Type Window}">
+            <Setter Property="FontFamily" Value="Book Antiqua" />
+            <Setter Property="FontSize" Value="10pt" />
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="Background">
+                <Setter.Value>
+                    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                        <DrawingBrush.Drawing>
+                            <DrawingGroup>
+                                <GeometryDrawing Brush="White">
+                                    <GeometryDrawing.Geometry>
+                                        <RectangleGeometry Rect="0,0,1,1" />
+                                    </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                                <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                            </DrawingGroup>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                    <!--      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9AA1AC" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush> -->
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="TabStyle1" TargetType="{x:Type TabControl}">
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="FontSize" Value="11pt" />
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="FontWeight" Value="Normal" />
+            <Setter Property="Foreground" Value="DarkSlateBlue"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <DrawingBrush  Viewport="0,0,10,10" ViewportUnits="Absolute" TileMode="Tile">
+                        <DrawingBrush.Drawing>
+                            <DrawingGroup>
+                                <GeometryDrawing Brush="White">
+                                    <GeometryDrawing.Geometry>
+                                        <RectangleGeometry Rect="0,0,1,1" />
+                                    </GeometryDrawing.Geometry>
+                                </GeometryDrawing>
+                                <GeometryDrawing Geometry="M0,0 L1,0 1,0.1, 0,0.1Z " Brush="#CCCCFF" />
+                                <GeometryDrawing Geometry="M0,0 L0,1 0.1,1, 0.1,0Z" Brush="#CCCCFF" />
+                            </DrawingGroup>
+                        </DrawingBrush.Drawing>
+                    </DrawingBrush>
+                    <!--      <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF9AA1AC" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush> -->
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="MenuBtnStyle" TargetType="{x:Type MenuItem}">
+            <!--
+                    <Setter Property="Background">
+                        <Setter.Value>
+                           <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="#FF89B9B3" Offset="0"/>
+                                <GradientStop Color="#FFCDD4D4" Offset="0.926"/>
+                            </LinearGradientBrush>
+                         </Setter.Value>
+                    </Setter>
+            -->
+            <Setter Property="Margin" Value="10,10,0,0"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Foreground" Value="PaleVioletRed"/> 
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="FontFamily" Value="Roboto" />
+            <Setter Property="FontSize" Value="12pt" />
+            <Setter Property="FontStyle" Value="Italic" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="TextWrapping" Value="Wrap" />
+            <Setter Property="Foreground" Value="DarkSlateBlue" />
+            <Setter Property="FontSize" Value="12pt" />
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderThickness" Value="0,0,0,0"></Setter>
+            <Setter Property="BorderBrush" Value="BlanchedAlmond" ></Setter>
+
+        </Style>
+        
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="DarkSlateBlue"></Setter>
+            <Setter Property="Height" Value="Auto"></Setter>
+           <!-- <Setter Property="BorderBrush" Value="BlanchedAlmond" ></Setter>
+             <Setter Property="BorderThickness" Value="0,0,0,3"></Setter>
+            <Setter Property="Foreground" Value="Wheat" />
+           <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FFA4A1A1" Offset="0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                     </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+         -->   
+        </Style>
+        
+        <Style x:Key="double" TargetType="TextBlock">
+            <Setter Property="Text" Value="{Binding StringFormat='{}{0,12:E4}'}" />
+            <Setter Property="TextAlignment" Value="Center" />
+        </Style>
+        
+        <Style TargetType="Button">
+            <Setter Property="Cursor" Value="Hand"></Setter>
+        </Style>
+        
+    </Application.Resources>
+</Application>
